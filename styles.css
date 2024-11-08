@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s; /* Transición suave del fondo */
+}
+
+#agentsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.agent-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+.agent-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Efecto de resplandor al pasar el mouse */
+.agent-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Resplandor azul */
+}
